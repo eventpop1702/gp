@@ -8,18 +8,18 @@ import threading
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7460424277:AAGZjfvmdAhJTnGJlLH6LAYYsKAXiQHB_Cs')
+bot = telebot.TeleBot('8083989511:AAF600ruXncDoIkyti3CV-qRJsB4YlLGMJE')
 
 # Admin user IDs
 admin_id = ["7409754329"]
 
 # Group and channel details
-GROUP_ID = "-1002410640320"
-CHANNEL_USERNAME = "@GODCRACKSS"
+GROUP_ID = "-1002462241829"
+CHANNEL_USERNAME = "@safecheatedition"
 
 # Default cooldown and attack limits
-COOLDOWN_TIME = 300  # Cooldown in seconds
-ATTACK_LIMIT = 10  # Max attacks per day
+COOLDOWN_TIME = 10  # Cooldown in seconds
+ATTACK_LIMIT = 20  # Max attacks per day
 
 # Files to store user data
 USER_FILE = "users.txt"
@@ -64,7 +64,7 @@ def handle_attack(message):
 
     # Ensure user is in the group
     if message.chat.id != int(GROUP_ID):
-        bot.reply_to(message, "This bot can only be used in the specified group. Join - https://t.me/GODDDOSFREE")
+        bot.reply_to(message, "This bot can only be used in the specified group. Join -  https://t.me/safecheatedition")
         return
 
     # Ensure user is a member of the channel
@@ -196,7 +196,7 @@ def view_users(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, Feel Free to Explore.\nThe World's Best Ddos Bot\nTo Use This Bot Join https://t.me/GODDDOSFREE"
+    response = f"Welcome to Your Home, Feel Free to Explore.\nThe World's Best Ddos Bot\nTo Use This Bot Join https://t.me/+4pFQFnoJFy9kNmFl"
     bot.reply_to(message, response)
 
 # Function to reset daily limits automatically
